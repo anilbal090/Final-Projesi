@@ -14,6 +14,7 @@ public class RESTServisi {
 		HABERLER.add(haber);
 		return haber;
 	}
+
 	
 
 	@RequestMapping("/haber/listele")
