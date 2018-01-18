@@ -1,5 +1,9 @@
 package com.proje.Proje;
-
+/**	
+ * 
+ * @author Batuhan Kutluay
+ *
+ */
 public class Haber {
 	private static int COUNT = 0;
 
