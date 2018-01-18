@@ -7,7 +7,6 @@ public class Haber {
 	public String haberBaslik;
 
 
-
 	public String haberIcerik;
 	
 	public Haber(String haberBaslik,String haberIcerik)
