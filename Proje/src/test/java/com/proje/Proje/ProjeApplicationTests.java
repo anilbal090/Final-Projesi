@@ -1,6 +1,7 @@
 package com.proje.Proje;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -66,7 +67,7 @@ public class ProjeApplicationTests {
 	  	assertEquals("OK",RESTServisi.haberSil(0));
 
  	}
-  /*
+  
   @Test
  	public void testClass() throws Exception{
  		boolean hataOlustu = false;
@@ -78,16 +79,16 @@ public class ProjeApplicationTests {
  		
  		assertFalse(hataOlustu);
  	}
- 	*/
+ 	
   
-  /*
+  
   @Test
 	public void testMain() { 
 	  ProjeApplication.main(new String[]{
               "--spring.main.web-environment=false",
       });
 	}
-	*/
+	
   
 	
 

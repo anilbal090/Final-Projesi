@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class RESTServisi {
 	
-	private RESTServisi() {
+	/*private RESTServisi() {
 	    throw new IllegalStateException("");
-	  }
+	  }*/
     private static final List<Haber> HABERLER = new ArrayList<>();
     
     @RequestMapping("/haber/olustur")
