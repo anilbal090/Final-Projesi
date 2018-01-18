@@ -40,10 +40,5 @@ public class RESTServisi {
 	{
 		HABERLER.remove(index);
 		return "OK";
-	}
-   
-	
-
-   
-	
+	}	
 }
