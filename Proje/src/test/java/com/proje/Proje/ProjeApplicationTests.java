@@ -16,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @JsonTest
@@ -41,8 +40,8 @@ public class ProjeApplicationTests {
   @Test
 	public void testHaberYaz() throws Exception {
 	  	Haber haber = RESTServisi.haberYAZ("deneme", "icerik");
-	  	assertEquals(haber.getHaberBaslik(), "deneme");
-	  	assertEquals(haber.getHaberIcerik(), "icerik");
+	  	assertEquals("deneme",haber.getHaberBaslik());
+	  	assertEquals("icerik",haber.getHaberIcerik());
 	}
   
   @Test
@@ -51,7 +50,7 @@ public class ProjeApplicationTests {
 	  	RESTServisi.haberYAZ("Baslik", "icerik");
 	    assertTrue(RESTServisi.haberListele().stream().anyMatch(item -> "Baslik".equals(item.getHaberBaslik())));	
 	    assertTrue(RESTServisi.haberListele().stream().anyMatch(item -> "icerik".equals(item.getHaberIcerik())));	  	
-
+	    
  	}
   
   @Test
@@ -65,7 +64,7 @@ public class ProjeApplicationTests {
 	    List<Haber> HABERLERTEST = new ArrayList<>();
 	  	Haber haber = RESTServisi.haberYAZ("deneme", "icerik");
 	    HABERLERTEST.add(haber);
-	  	assertEquals(RESTServisi.haberSil(0),"OK");
+	  	assertEquals("OK",RESTServisi.haberSil(0));
 
  	}
   
