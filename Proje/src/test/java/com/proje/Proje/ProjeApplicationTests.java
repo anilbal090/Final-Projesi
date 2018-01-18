@@ -70,7 +70,7 @@ public class ProjeApplicationTests {
  	}
   
   @Test
- 	public void testClass() {
+ 	public void testClass() throws Exception{
  		boolean hataOlustu = false;
  		try {
  			RESTServisi servis = new RESTServisi();
@@ -80,6 +80,14 @@ public class ProjeApplicationTests {
  		
  		assertFalse(hataOlustu);
  	}
+  
+  
+  @Test
+	public void testMain() { 
+	  ProjeApplication.main(new String[]{
+              "--spring.main.web-environment=false",
+      });
+	}
   
 	
 
