@@ -2,11 +2,12 @@ package com.proje.Proje;
 
 public class Haber {
 	private static int COUNT = 0;
+
 	private int id;
 	
-	public String haberBaslik;
+	private String haberBaslik;
 
-	public String haberIcerik;
+	private String haberIcerik;
 	public Haber(String haberBaslik,String haberIcerik)
 	{
 		this.id = ++COUNT;
@@ -21,4 +22,8 @@ public class Haber {
 	public String getHaberIcerik() {
 		return haberIcerik;
 	}
+	public int getId() {
+		return id;
+	}
+
 }

@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class RESTServisi {
-private static final List<Haber> HABERLER = new ArrayList<Haber>();
-	
+    private static final List<Haber> HABERLER = new ArrayList<>();
 	@RequestMapping("/haber/olustur")
 	public Haber haberOlustur(String haberBaslik,String haberIcerik)
 	{
