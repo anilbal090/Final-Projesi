@@ -49,7 +49,9 @@ public class ProjeApplicationTests {
  	public void testHaberListele() throws Exception{
 
 	  	RESTServisi.haberYAZ("Baslik", "icerik");
-	    assertTrue(RESTServisi.haberListele().stream().anyMatch(item -> "Baslik".equals(item.getHaberBaslik())));	  	
+	    assertTrue(RESTServisi.haberListele().stream().anyMatch(item -> "Baslik".equals(item.getHaberBaslik())));	
+	    assertTrue(RESTServisi.haberListele().stream().anyMatch(item -> "icerik".equals(item.getHaberIcerik())));	  	
+
  	}
   
   @Test
