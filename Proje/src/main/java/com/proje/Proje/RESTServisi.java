@@ -2,14 +2,13 @@ package com.proje.Proje;
 import java.util.List;
 import java.util.ArrayList;
 import org.springframework.web.bind.annotation.RestController;
-
 import org.springframework.web.bind.annotation.RequestMapping;
+
+
+
 @RestController
 public class RESTServisi {
-	
-	/*private RESTServisi() {
-	    throw new IllegalStateException("");
-	  }*/
+
     private static final List<Haber> HABERLER = new ArrayList<>();
     
     @RequestMapping("/haber/olustur")
@@ -20,7 +19,6 @@ public class RESTServisi {
    		return haber;
    	}
 
-    
 	@RequestMapping("/haber/listele")
 	public static List<Haber> haberListele()
 	{
