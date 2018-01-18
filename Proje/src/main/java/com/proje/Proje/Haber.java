@@ -8,7 +8,6 @@ public class Haber {
 
 
 	public String haberIcerik;
-	
 	public Haber(String haberBaslik,String haberIcerik)
 	{
 		this.id = ++COUNT;
