@@ -22,6 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ProjeApplicationTests {
 
+	
 	@Test
 	public void contextLoads() {
 	}
@@ -52,12 +53,14 @@ public class ProjeApplicationTests {
 	    assertTrue(RESTServisi.haberListele().stream().anyMatch(item -> "icerik".equals(item.getHaberIcerik())));	  	
 	    
  	}
+ 	
   
   @Test
 	public void testHaberTemizle() throws Exception{
 
 		assertTrue(RESTServisi.haberTemizle(), true);
 	}
+	
   
   @Test
  	public void testHaberSil() throws Exception{
@@ -67,6 +70,7 @@ public class ProjeApplicationTests {
 	  	assertEquals("OK",RESTServisi.haberSil(0));
 
  	}
+ 	
   
   @Test
  	public void testClass() throws Exception{
@@ -80,6 +84,7 @@ public class ProjeApplicationTests {
  		assertFalse(hataOlustu);
  	}
  	
+ 	
   
   
   @Test
@@ -88,6 +93,8 @@ public class ProjeApplicationTests {
               "--spring.main.web-environment=false",
       });
 	}
+	
+	
 	
   
 	
