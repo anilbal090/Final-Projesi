@@ -86,13 +86,14 @@ public class ProjeApplicationTests {
  	
  	
   
-  
   @Test
 	public void testMain() { 
 	  ProjeApplication.main(new String[]{
               "--spring.main.web-environment=false",
       });
 	}
+	
+	
 	
 	
 	
