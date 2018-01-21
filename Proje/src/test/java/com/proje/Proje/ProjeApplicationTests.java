@@ -28,7 +28,6 @@ public class ProjeApplicationTests {
 	}
 	@Autowired
     private JacksonTester<Haber> json;
-	Haber details = new Haber("Baslik", "Icerik");
   
   @Test
     public void testHaber() throws Exception {
