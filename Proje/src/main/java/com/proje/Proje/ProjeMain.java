@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class ProjeApplication {
+public class ProjeMain {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjeApplication.class, args);
+		SpringApplication.run(ProjeMain.class, args);
 	}
 }

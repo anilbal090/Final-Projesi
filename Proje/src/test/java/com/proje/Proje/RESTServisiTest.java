@@ -11,6 +11,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import com.proje.Proje.Haber;
+import com.proje.Proje.ProjeMain;
+import com.proje.Proje.RESTServisi;
+
 import org.springframework.boot.test.json.JacksonTester;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
@@ -26,7 +31,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 @JsonTest
 
-public class ProjeApplicationTests {
+public class RESTServisiTest {
 
 	@Autowired
     private JacksonTester<Haber> json;
@@ -117,7 +122,7 @@ public class ProjeApplicationTests {
 	
 	@Test
 	public void testMain() { 
-	  ProjeApplication.main(new String[]{
+	  ProjeMain.main(new String[]{
               "--spring.main.web-environment=false",
       });
 	}
