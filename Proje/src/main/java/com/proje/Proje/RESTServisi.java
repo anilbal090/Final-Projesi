@@ -51,7 +51,7 @@ public class RESTServisi {
 	public static String haberTemizle()
 	{
 		HABERLER.clear();
-		return "OK";
+		return "Bütün haberler silindi";
 	}
 	
 	/**
@@ -63,6 +63,6 @@ public class RESTServisi {
 	public static String haberSil(int index)
 	{
 		HABERLER.remove(index);
-		return "OK";
+		return "Belirlenen indexteki haber silindi";
 	}	
 }
