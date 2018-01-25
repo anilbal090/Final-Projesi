@@ -94,7 +94,7 @@ public class RESTServisiTest {
 	    List<Haber> HABERLERTEST = new ArrayList<>();
 	  	Haber haber = RESTServisi.haberYAZ("deneme", "icerik");
 	    HABERLERTEST.add(haber);
-	  	assertEquals("OK",RESTServisi.haberSil(0));
+	  	assertEquals("Belirlenen indexteki haber silindi",RESTServisi.haberSil(0));
 
  	}
  	
