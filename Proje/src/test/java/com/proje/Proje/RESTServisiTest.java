@@ -115,7 +115,6 @@ public class RESTServisiTest {
  		assertFalse(hataOlustu);
  	}
  	
- 	
   /**
    * Maini test eder
    */
