@@ -45,7 +45,8 @@ public class RESTServisiTest {
     public void testHaber() throws Exception {
         Haber haber = new Haber("Baslik", "Icerik");
         assertThat(this.json.write(haber)).hasJsonPathStringValue("@.haberBaslik");
-        assertThat(this.json.write(haber)).extractingJsonPathStringValue("@.haberIcerik").isEqualTo("Icerik");
+        assertThat(this.json.write(haber)).extractingJsonPathStringValue("@.haberIcerik")
+                .isEqualTo("Icerik");
     }
 	
 	/**
